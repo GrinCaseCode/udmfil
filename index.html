@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css?ver=1.2" />
+</head>
+<body>
+
+	<div class="swiper hidden-mob swiper-billbord">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn1.jpg);"></a>
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn2.jpg);"></a>
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn3.jpg);"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#" class="item-slide" style="background-image: url(images/bnn4.jpg);"></a>
+			</div>
+		</div>
+		<div class="bottom-swiper">
+			<div class="controls-swiper">
+				<div class="slmain swiper-button-next"></div>
+				<div class="slmain swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>  
+			</div>
+		</div>
+	</div>
+
+	<div class="swiper show-mob swiper-billbord">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn1.jpg);"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn2.jpg);"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#" class="item-slide item-slide_shadow" style="background-image: url(images/bnn3.jpg);"></a>
+			</div>
+			<div class="swiper-slide">
+				<a href="#" class="item-slide" style="background-image: url(images/bnn4.jpg);"></a>
+			</div>
+		</div>
+		<div class="bottom-swiper">
+			<div class="controls-swiper">
+				<div class="slmain swiper-button-next"></div>
+				<div class="slmain swiper-button-prev"></div>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+	</div>
+
+	<script src="libs/swiper/swiper-bundle.min.js"></script>
+
+	<script>
+		var swiper = new Swiper('.swiper-billbord', {
+			slidesPerView: 1,
+			spaceBetween:0,
+			slidesPerGroup: 1,
+			centeredSlides:false,
+			loop:false,
+			autoplay:	{
+				delay: 10000,
+				disableOnInteraction: true,
+			},
+			navigation: {
+				nextEl: '.swiper-billbord .swiper-button-next',
+				prevEl: '.swiper-billbord .swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-billbord .swiper-pagination',
+				clickable: true,
+			},
+        });
+    </script>
+</body>
+</html>
